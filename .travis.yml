@@ -1,4 +1,4 @@
-sudo: required
+language: generic
 
 services:
   - docker
@@ -11,10 +11,10 @@ script:
 
 after_success:
   - echo $DOCKER_PASSWORD | docker login -u $DOCKER_ID --password-stdin
-  - docker build --pull --tag mikalaihryb/complex-client ./client
-  - docker build --pull --tag mikalaihryb/complex-nginx ./nginx
-  - docker build --pull --tag mikalaihryb/complex-server ./server
-  - docker build --pull --tag mikalaihryb/complex-worker ./worker
+  - docker build --tag mikalaihryb/complex-client ./client
+  - docker build --tag mikalaihryb/complex-nginx ./nginx
+  - docker build --tag mikalaihryb/complex-server ./server
+  - docker build --tag mikalaihryb/complex-worker ./worker
   - docker push mikalaihryb/complex-client
   - docker push mikalaihryb/complex-nginx
   - docker push mikalaihryb/complex-server
