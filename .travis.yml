@@ -13,9 +13,9 @@ after_success:
   - echo $DOCKER_PASSWORD | docker login -u $DOCKER_ID --password-stdin
   - docker build --tag $DOCKER_ID/complex-client ./client
   - docker build --tag $DOCKER_ID/complex-nginx ./nginx
-  - docker build --tag $DOCKER_ID/complex-server ./server
+  - docker build --tag $DOCKER_ID/complex-api ./api
   - docker build --tag $DOCKER_ID/complex-worker ./worker
   - docker push $DOCKER_ID/complex-client
   - docker push $DOCKER_ID/complex-nginx
-  - docker push $DOCKER_ID/complex-server
+  - docker push $DOCKER_ID/complex-api
   - docker push $DOCKER_ID/complex-worker
