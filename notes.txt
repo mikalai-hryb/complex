@@ -1,0 +1,14 @@
+AWS
+vpc instances
+vpn
+Kubernetes  is a system to deploy containerized apps.
+Kubernetes  is a system for running many different containers over multiple different containers
+Kubernetes is an assembly of a master and one or more nodes.
+Node is a virtual machine or a physical computer that is going to run some number of different containers
+Mater ia a machine or vm with a set of programs to manage nodes
+Kubernetes does not build images, it gets them from somewhere else
+Developers interact with a Kubernetes cluster by reaching out to this master
+Load Balancer takes some outside traffic in the form of network requests and relay these requests into each of our different nodes
+We use Kubernetes if we have the need to scale up our application and run multiple different types of containers in different quantities
+To deploy something, we update the desired state of the master with a config file
+A Pod represents a single instance of a running process in your cluster.
