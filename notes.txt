@@ -2,6 +2,7 @@ AWS
 vpc instances
 vpn
 Kubernetes  is a system to deploy containerized apps.
+Kubernetes is an open source container orchestration platform
 Kubernetes  is a system for running many different containers over multiple different containers
 Kubernetes is an assembly of a master and one or more nodes.
 Node is a virtual machine or a physical computer that is going to run some number of different containers
@@ -12,3 +13,5 @@ Load Balancer takes some outside traffic in the form of network requests and rel
 We use Kubernetes if we have the need to scale up our application and run multiple different types of containers in different quantities
 To deploy something, we update the desired state of the master with a config file
 A Pod represents a single instance of a running process in your cluster.
+Postgres PVC - persistent volume claim
+we have 2 types of the persistent volume (statistically provisioned persistent volume and dynamically provisioned persistent volume)
